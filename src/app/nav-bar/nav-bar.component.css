@@ -1,0 +1,37 @@
+:host {
+    display: block;
+    margin: 0;
+    padding: 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.navbar-brand {
+    font-size: 1.5rem;
+margin-right: 2rem;
+color: #5cb85c;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+ul li a {
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+ul li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+ul li a.active {
+    color: rgba(0, 0, 0, 0.7);
+}

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'mcu-112-web-12131555-final' title`, () => {
+  it(`should have the 'todos' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mcu-112-web-12131555-final');
+    expect(app.title).toEqual('todos');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, mcu-112-web-12131555-final');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, todos');
   });
 });
